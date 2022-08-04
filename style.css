@@ -1,0 +1,105 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');  
+
+body {
+    background-color:  hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+    padding: 50px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px;
+}
+
+.luxury { 
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 50px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+
+.orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.blue {
+    color: hsl(184, 100%, 22%);
+}
+
+.green {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.orange:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.blue:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.green:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media all and (min-width: 376px) {
+    #container {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        text-align: left;
+        position: relative;
+        top: 10em;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
